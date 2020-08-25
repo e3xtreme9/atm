@@ -6,12 +6,14 @@ public class Bank {
 
     private String name;
     private ArrayList<Customer> customers;
-    private DbDataSource dataSource;
+    //private DbDataSource dataSource;
+    //private WebServiceDataSource dataSource;
+    private DataSource dataSource;
 
-    public Bank(String name) {
+    public Bank(String name, DataSource dataSource) {
         this.name = name;
         //this.customers = new ArrayList<>();
-        this.dataSource = new DbDataSource();
+        this.dataSource = dataSource;
         this.customers = dataSource.getCustomerData();
     }
 

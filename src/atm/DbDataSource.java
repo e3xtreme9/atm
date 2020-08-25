@@ -2,7 +2,7 @@ package atm;
 
 import java.util.ArrayList;
 
-public class DbDataSource {
+public class DbDataSource implements DataSource{
 
     public ArrayList<Customer> getCustomerData(){
         // database จำลอง

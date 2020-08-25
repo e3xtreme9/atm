@@ -8,7 +8,7 @@ public class CustomerMain {
         //System.out.println(peter.checkPin("195874"));
 
 
-        Bank bank = new Bank("KTB Bank");
+        Bank bank = new Bank("KTB Bank" , new WebServiceDataSource());
         bank.addCustomer(peter);
         bank.addCustomer(nancy);
 
