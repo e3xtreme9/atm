@@ -27,5 +27,7 @@ public class CustomerMain {
 //        System.out.println(bank.toString());
         //System.out.println(c1);
         //System.out.println(c2);
+        System.out.println("==============");
+        System.out.println(bank);
     }
 }

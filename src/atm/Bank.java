@@ -6,10 +6,13 @@ public class Bank {
 
     private String name;
     private ArrayList<Customer> customers;
+    private DbDataSource dataSource;
 
     public Bank(String name) {
         this.name = name;
-        this.customers = new ArrayList<>();
+        //this.customers = new ArrayList<>();
+        this.dataSource = new DbDataSource();
+        this.customers = dataSource.getCustomerData();
     }
 
     public void addCustomer(Customer c){
